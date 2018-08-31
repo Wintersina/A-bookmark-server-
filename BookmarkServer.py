@@ -46,7 +46,7 @@ import requests
 from urllib.parse import unquote, parse_qs
 import os
 import threading
-from socket server import ThreadingMixIn
+from socketserver import ThreadingMixIn
 
 class ThreadHTTPServer(ThreadingMixIn, http.server.HTTPServer):
     "This is an HTTPServer that supports thread-based concurrency."
